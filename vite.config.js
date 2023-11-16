@@ -7,7 +7,7 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://mern-estate-teal.vercel.app',
-        secure: false,
+        changeOrigin: true,
       },
     },
   },
